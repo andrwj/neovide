@@ -29,7 +29,7 @@ define! {
         const SYSTEM_SYMBOL_FONT: &str = "Noto Sans Mono";
         const SYSTEM_EMOJI_FONT: &str = "Noto Color Emoji";
     } else if #[cfg(target_os = "macos")] {
-        const SYSTEM_DEFAULT_FONT: &str = "Menlo";
+        const SYSTEM_DEFAULT_FONT: &str = "Noto Sans Mono CJK KR";
         const SYSTEM_SYMBOL_FONT: &str = "Apple Symbols";
         const SYSTEM_EMOJI_FONT: &str = "Apple Color Emoji";
     }
@@ -43,7 +43,7 @@ const MISSING_GLYPH_FONT: &str = "Missing Glyphs.otf";
 #[folder = "assets/fonts/"]
 struct Asset;
 
-const DEFAULT_FONT_SIZE: f32 = 14.0;
+const DEFAULT_FONT_SIZE: f32 = 16.0;
 
 #[derive(Clone)]
 pub struct ExtendedFontFamily {
